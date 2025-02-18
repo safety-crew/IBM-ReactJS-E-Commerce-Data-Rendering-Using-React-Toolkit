@@ -7,6 +7,7 @@ import {
   decreaseItemQuantity,
 } from "./CartSlice"; // Assuming you have action creators for increasing and decreasing item quantity
 import "./ShoppingCart.css"; // Import CSS file for component-specific styles
+import SuperCoins from "./SuperCoins";
 
 const ShoppingCart = () => {
   const dispatch = useDispatch();
@@ -73,6 +74,7 @@ const ShoppingCart = () => {
       <div>
         {totalAmount ? <div>'The total amount is {totalAmount}</div> : ""}
       </div>
+      <SuperCoins />
     </>
   );
 };
